@@ -109,12 +109,14 @@ button:active {
   background-color: #FF5533;
   color: #fff !important;
   text-align: center;
+  font-weight: 500 !important;
 }
 
 .offcanvas-login-join .nav-login {
   border: 1px solid #FF5533;
   margin-top: 15px;
   text-align: center;
+  font-weight: 500 !important;
 }
 
 .offcanvas-item .logged-in-user.card {

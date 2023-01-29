@@ -69,12 +69,14 @@
     background-color: $theme-color-alt;
     color: #fff!important;
     text-align: center;
+    font-weight: 500!important;
 }
 
 .offcanvas-login-join .nav-login {
     border: 1px solid $theme-color-alt;
     margin-top: 15px;
     text-align: center;
+    font-weight: 500!important;
 }
 
 .offcanvas-item .logged-in-user.card {
