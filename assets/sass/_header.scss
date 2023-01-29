@@ -1,0 +1,113 @@
+@use 'variables' as *;
+
+// Header Start
+.header-area {
+    padding: 10px 0;
+    border-bottom: 1px solid $border-color;
+}
+
+.header-area .toggle-btn {
+    font-size: 30px;
+    padding: 0;
+    margin-right: 15px;
+}
+
+.header-area .toggle-btn:active,
+.header-area .toggle-btn:focus {
+    border: 1px solid transparent;
+}
+
+.header-area .toggle-btn i {
+    color: $theme-color;
+}
+
+.header-area .nav .nav-link {
+    font-weight: 500;
+    color: $text-color;
+    font-size: 16px;
+}
+
+.header-area .nav-fill .nav-link.active {
+    color: $theme-color-alt;
+}
+
+.header-area .justify-content-end .nav-link.active {
+    background-color: $theme-color-alt;
+    color: #fff;
+}
+// Header End
+
+// Off Canvas Menu Start
+.offcanvas-item {
+    border-bottom: 1px solid $border-color;
+    padding: 15px 0;
+}
+
+.offcanvas-item:last-child {
+    border: none;
+}
+
+.offcanvas-item h3 {
+    font-size: 20px;
+}
+
+.offcanvas-item .nav .nav-link {
+    font-weight: 400;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.offcanvas-item .nav .nav-link:hover {
+    color: $theme-color-alt;
+}
+
+.offcanvas-login-join {
+    margin-bottom: 1px;
+}
+
+.offcanvas-login-join .nav-join {
+    background-color: $theme-color-alt;
+    color: #fff!important;
+    text-align: center;
+}
+
+.offcanvas-login-join .nav-login {
+    border: 1px solid $theme-color-alt;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.offcanvas-item .logged-in-user.card {
+    border: none;
+}
+
+.offcanvas-item .logged-in-user.card img {
+    width: 60px;
+}
+
+.offcanvas-item .logged-in-user.card .card-title {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.offcanvas-item .logged-in-user.card .nav-profile {
+    font-size: 16px;
+    color: $theme-color-alt;
+}
+// Off Canvas Menu End
+
+// Search Start
+.search-area {
+    padding: 20px 0;
+    border-bottom: 1px solid $border-color;
+}
+
+.search-area .form-control {
+    width: 300px;
+}
+
+.search-area .form-control:focus {
+    box-shadow: none;
+    border: 1px solid $border-color;
+}
+// Search End

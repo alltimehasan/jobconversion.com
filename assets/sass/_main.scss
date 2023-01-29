@@ -1,0 +1,181 @@
+@use 'variables' as *;
+
+// Jobs Area Start
+.nav-job-search-saved .nav-link {
+    color: $title-color;
+    font-weight: 500;
+}
+
+.nav-job-search-saved .nav-link:first-child {
+    padding-left: 0;
+    margin-right: 20px;
+}
+
+.nav-job-search-saved .nav-link.active {
+    color: $theme-color-alt;
+}
+
+.btn-jobs-settings {
+    padding-right: 0;
+    border: none;
+    font-size: 20px;
+    color: $text-color;
+}
+
+.job-ads,
+.job-filters {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+}
+
+.filter-box {
+    margin-bottom: 20px;
+}
+
+.btn-save-search {
+    padding: 0;
+    padding-right: 0;
+    border: none;
+}
+
+.accordion-jobs-filter .accordion-item {
+    margin-bottom: 15px;
+    border: none;
+}
+
+.accordion-jobs-filter .accordion-button {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    color: $title-color;
+    font-weight: 500;
+}
+
+.accordion-jobs-filter .accordion-button::after {
+    display: none;
+}
+
+.accordion-jobs-filter .accordion-body {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.accordion-jobs-filter .form-check {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    color: $text-color;
+}
+
+.accordion-jobs-filter .form-check:last-child {
+    margin-bottom: 0;
+}
+
+.accordion-jobs-filter .form-check-input:checked {
+    background-color: $theme-color-alt;
+    border: $theme-color-alt;
+}
+
+.filter-box .btn-filter-reset {
+    padding-left: 0;
+    font-weight: 500;
+    border: none;
+}
+
+.job-search-result .card {
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.job-search-result .card:after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    left: -4px;
+    top: 0;
+    background-color: $theme-color-alt;
+    transition: all 0.15s;
+}
+
+.job-search-result .card:hover:after {
+    left: 0;
+}
+
+.job-search-result .card-body {
+    padding: 0;
+}
+
+.job-search-result .card-body:hover .card-text {
+    color: $text-color;
+}
+
+.job-search-result .card-body .card-title {
+    font-size: 18px;
+    color: $theme-color;
+    font-weight: 500;
+}
+
+.job-search-result .card-body .card-sub-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: $theme-color;
+}
+
+.job-search-result .card-body .card-text {
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.job-search-result .card-body .card-text .text-muted {
+    font-size: 12px;
+}
+
+.job-search-result .card-body .btn-experience {
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0;
+    padding: 2px 10px;
+    border: 1px solid $border-color;
+}
+
+.job-search-result .card-body .btn-experience:hover {
+    color: $text-color;
+}
+
+.job-search-result .nav-save-report .nav-link {
+    padding: 0;
+    color: $text-color;
+}
+
+.job-search-result .nav-link-save {
+    margin-right: 5px;
+}
+
+.job-search-result .nav-save-report .dropdown-menu {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+}
+
+.job-search-result .nav-save-report .dropdown-menu .dropdown-item {
+    padding: 7px 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 12px 2px rgba($color: #000000, $alpha: 0.20);
+    border: 1px solid $border-color;
+    color: $text-color;
+}
+
+.job-search-result .nav-save-report .dropdown-menu .dropdown-item:hover {
+    background-color: #fff;
+}
+// Jobs Area End

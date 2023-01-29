@@ -1,0 +1,364 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f2f3f5;
+  font-size: 16px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #021D38;
+}
+
+button:focus,
+button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-trans {
+  background-color: transparent;
+}
+
+.theme-btn {
+  background-color: #021D38;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+.theme-btn:hover,
+.theme-btn:focus,
+.theme-btn:active {
+  background-color: #021D38 !important;
+  color: #fff !important;
+  border: 1px solid #021D38 !important;
+}
+
+.header-area {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+.header-area .toggle-btn {
+  font-size: 30px;
+  padding: 0;
+  margin-right: 15px;
+}
+
+.header-area .toggle-btn:active,
+.header-area .toggle-btn:focus {
+  border: 1px solid transparent;
+}
+
+.header-area .toggle-btn i {
+  color: #021D38;
+}
+
+.header-area .nav .nav-link {
+  font-weight: 500;
+  color: #3c4043;
+  font-size: 16px;
+}
+
+.header-area .nav-fill .nav-link.active {
+  color: #FF5533;
+}
+
+.header-area .justify-content-end .nav-link.active {
+  background-color: #FF5533;
+  color: #fff;
+}
+
+.offcanvas-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+  padding: 15px 0;
+}
+
+.offcanvas-item:last-child {
+  border: none;
+}
+
+.offcanvas-item h3 {
+  font-size: 20px;
+}
+
+.offcanvas-item .nav .nav-link {
+  font-weight: 400;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.offcanvas-item .nav .nav-link:hover {
+  color: #FF5533;
+}
+
+.offcanvas-login-join {
+  margin-bottom: 1px;
+}
+
+.offcanvas-login-join .nav-join {
+  background-color: #FF5533;
+  color: #fff !important;
+  text-align: center;
+}
+
+.offcanvas-login-join .nav-login {
+  border: 1px solid #FF5533;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.offcanvas-item .logged-in-user.card {
+  border: none;
+}
+
+.offcanvas-item .logged-in-user.card img {
+  width: 60px;
+}
+
+.offcanvas-item .logged-in-user.card .card-title {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.offcanvas-item .logged-in-user.card .nav-profile {
+  font-size: 16px;
+  color: #FF5533;
+}
+
+.search-area {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+.search-area .form-control {
+  width: 300px;
+}
+
+.search-area .form-control:focus {
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+.nav-job-search-saved .nav-link {
+  color: #202125;
+  font-weight: 500;
+}
+
+.nav-job-search-saved .nav-link:first-child {
+  padding-left: 0;
+  margin-right: 20px;
+}
+
+.nav-job-search-saved .nav-link.active {
+  color: #FF5533;
+}
+
+.btn-jobs-settings {
+  padding-right: 0;
+  border: none;
+  font-size: 20px;
+  color: #3c4043;
+}
+
+.job-ads,
+.job-filters {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+.filter-box {
+  margin-bottom: 20px;
+}
+
+.btn-save-search {
+  padding: 0;
+  padding-right: 0;
+  border: none;
+}
+
+.accordion-jobs-filter .accordion-item {
+  margin-bottom: 15px;
+  border: none;
+}
+
+.accordion-jobs-filter .accordion-button {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: #202125;
+  font-weight: 500;
+}
+
+.accordion-jobs-filter .accordion-button::after {
+  display: none;
+}
+
+.accordion-jobs-filter .accordion-body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.accordion-jobs-filter .form-check {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #3c4043;
+}
+
+.accordion-jobs-filter .form-check:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-jobs-filter .form-check-input:checked {
+  background-color: #FF5533;
+  border: #FF5533;
+}
+
+.filter-box .btn-filter-reset {
+  padding-left: 0;
+  font-weight: 500;
+  border: none;
+}
+
+.job-search-result .card {
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.job-search-result .card:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  left: -4px;
+  top: 0;
+  background-color: #FF5533;
+  transition: all 0.15s;
+}
+
+.job-search-result .card:hover:after {
+  left: 0;
+}
+
+.job-search-result .card-body {
+  padding: 0;
+}
+
+.job-search-result .card-body:hover .card-text {
+  color: #3c4043;
+}
+
+.job-search-result .card-body .card-title {
+  font-size: 18px;
+  color: #021D38;
+  font-weight: 500;
+}
+
+.job-search-result .card-body .card-sub-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #021D38;
+}
+
+.job-search-result .card-body .card-text {
+  margin-bottom: 0;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.job-search-result .card-body .card-text .text-muted {
+  font-size: 12px;
+}
+
+.job-search-result .card-body .btn-experience {
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0;
+  padding: 2px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+.job-search-result .card-body .btn-experience:hover {
+  color: #3c4043;
+}
+
+.job-search-result .nav-save-report .nav-link {
+  padding: 0;
+  color: #3c4043;
+}
+
+.job-search-result .nav-link-save {
+  margin-right: 5px;
+}
+
+.job-search-result .nav-save-report .dropdown-menu {
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+}
+
+.job-search-result .nav-save-report .dropdown-menu .dropdown-item {
+  padding: 7px 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  color: #3c4043;
+}
+
+.job-search-result .nav-save-report .dropdown-menu .dropdown-item:hover {
+  background-color: #fff;
+}
+
+.footer-area {
+  background-color: #021D38;
+}
+
+.footer-area .nav-social {
+  margin-top: 20px;
+}
+
+.footer-area .nav-social .nav-link {
+  color: #fff;
+  font-size: 25px;
+}
+
+.footer-area .nav-social .nav-item:first-child .nav-link {
+  padding-left: 0;
+}
+
+.footer-area h2 {
+  color: #ddd;
+  font-size: 25px;
+}
+
+.footer-area .nav-footer .nav-link {
+  padding-left: 0;
+  color: #ddd;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.copyright-text {
+  color: #ddd;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */

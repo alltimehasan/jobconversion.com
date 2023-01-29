@@ -1,0 +1,37 @@
+@use 'variables' as *;
+
+// Footer Start
+.footer-area {
+    background-color: $theme-color;
+}
+
+.footer-area .nav-social {
+    margin-top: 20px;
+}
+
+.footer-area .nav-social .nav-link {
+    color: #fff;
+    font-size: 25px;
+}
+
+.footer-area .nav-social .nav-item:first-child .nav-link {
+    padding-left: 0;
+}
+
+.footer-area h2 {
+    color: #ddd;
+    font-size: 25px;
+}
+
+.footer-area .nav-footer .nav-link {
+    padding-left: 0;
+    color: #ddd;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.copyright-text {
+    color: #ddd;
+    font-size: 14px;
+}
+// Footer End

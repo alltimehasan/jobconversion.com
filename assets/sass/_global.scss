@@ -1,0 +1,48 @@
+@use 'variables' as *;
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: $body-color;
+	font-size: 16px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+a {
+	text-decoration: none;
+	color: $theme-color;
+}
+
+button:focus,
+button:active {
+	outline: none!important;
+	box-shadow: none!important;
+}
+
+// Background Colors
+.bg-white {
+	background-color: #fff;
+}
+
+.bg-trans {
+	background-color: $color-trans;
+}
+
+// Button Styles
+.theme-btn {
+	background-color: $theme-color;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.theme-btn:hover,
+.theme-btn:focus,
+.theme-btn:active {
+	background-color: $theme-color!important;
+	color: #fff!important;
+	border: 1px solid $theme-color!important;
+}
