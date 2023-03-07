@@ -199,3 +199,48 @@
     background-color: #fff;
 }
 // Jobs Area End
+
+// Login Start
+.login-box {
+    max-width: 450px;
+    margin: 80px auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
+    border-radius: 3px;
+}
+
+.login-box h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.login-or {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    color: $text-color;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.login-alt .theme-btn {
+    background-color: #fff!important;
+    color: $text-color;
+    margin-bottom: 10px;
+    border: 1px solid $border-color;
+    box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
+}
+
+.login-alt .theme-btn:hover {
+    background-color: $theme-color!important;
+    color: #fff!important;
+}
+
+.login-alt .theme-btn i {
+    margin-right: 10px;
+}
+// Login End

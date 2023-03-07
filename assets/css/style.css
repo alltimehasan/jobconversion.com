@@ -34,6 +34,7 @@ button:active {
   border-radius: 4px;
   letter-spacing: 1px;
   border: 1px solid #021D38;
+  padding: 10px;
 }
 
 .theme-btn:hover,
@@ -58,6 +59,24 @@ button:active {
 .theme-btn-outline:active {
   background-color: transparent;
   border: 1px solid #021D38 !important;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=tel] {
+  padding: 10px;
+  border-radius: 3px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+input[type=tel]:focus {
+  border: 1px solid #FF5533;
+  box-shadow: none;
 }
 
 .header-area {
@@ -365,6 +384,49 @@ button:active {
 
 .job-search-result .nav-save-report .dropdown-menu .dropdown-item:hover {
   background-color: #fff;
+}
+
+.login-box {
+  max-width: 450px;
+  margin: 80px auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+  border-radius: 3px;
+}
+
+.login-box h2 {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.login-or {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  color: #3c4043;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.login-alt .theme-btn {
+  background-color: #fff !important;
+  color: #3c4043;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+}
+
+.login-alt .theme-btn:hover {
+  background-color: #021D38 !important;
+  color: #fff !important;
+}
+
+.login-alt .theme-btn i {
+  margin-right: 10px;
 }
 
 .footer-area {
