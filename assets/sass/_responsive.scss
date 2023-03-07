@@ -7,7 +7,20 @@
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991px) {
-    
+    .jobs-sort-filter {
+        background-color: transparent;
+        border: none;
+    }
+    .jobs-sort-filter a.nav-link.dropdown-toggle {
+        padding-left: 0;
+    }
+    .job-search-result .card {
+        padding: 7px;
+        padding-right: 2px;
+    }
+    section {
+        padding: 20px 0;
+    }
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -17,5 +30,17 @@
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
-    
+    .header-area .toggle-btn {
+        margin-right: 5px;
+    }
+    .header-area .header-logo {
+        width: 150px;
+    }
+    .header-area .justify-content-end .nav-link {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .search-area .form-control {
+        width: initial;
+    }
 }

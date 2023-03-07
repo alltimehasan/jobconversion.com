@@ -2,8 +2,12 @@
 
 // Header Start
 .header-area {
-    padding: 10px 0;
+    padding: 0;
     border-bottom: 1px solid $border-color;
+}
+
+.header-area .navbar {
+    padding: 12px 0;
 }
 
 .header-area .toggle-btn {
@@ -21,14 +25,28 @@
     color: $theme-color;
 }
 
-.header-area .nav .nav-link {
+.header-area .navbar-nav .nav-link {
     font-weight: 500;
     color: $text-color;
     font-size: 16px;
 }
 
-.header-area .nav-fill .nav-link.active {
+.header-area .navbar-nav-middle .nav-link {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.header-area .navbar-nav-middle .nav-link.active {
     color: $theme-color-alt;
+}
+
+.header-area .navbar-nav-right .nav-link.active {
+    background-color: $theme-color-alt;
+    color: #fff;
+    border-radius: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 15px;
 }
 
 .header-area .justify-content-end .nav-link.active {
@@ -37,66 +55,49 @@
 }
 // Header End
 
-// Off Canvas Menu Start
-.offcanvas-item {
+// Logged In Nav Start
+.navbar-nav-logged-in .nav-link {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+}
+
+.navbar-nav-logged-in ul.dropdown-menu {
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar-nav-logged-in ul.dropdown-menu .dropdown-item {
+    white-space: inherit;
+    transition: all 0.3s;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid $border-color;
-    padding: 15px 0;
+    font-size: 15px;
 }
 
-.offcanvas-item:last-child {
-    border: none;
-}
-
-.offcanvas-item h3 {
-    font-size: 20px;
-}
-
-.offcanvas-item .nav .nav-link {
-    font-weight: 400;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.offcanvas-item .nav .nav-link:hover {
-    color: $theme-color-alt;
-}
-
-.offcanvas-login-join {
-    margin-bottom: 1px;
-}
-
-.offcanvas-login-join .nav-join {
+.navbar-nav-logged-in ul.dropdown-menu .dropdown-item:hover {
     background-color: $theme-color-alt;
-    color: #fff!important;
-    text-align: center;
-    font-weight: 500!important;
+    color: #fff;
 }
 
-.offcanvas-login-join .nav-login {
-    border: 1px solid $theme-color-alt;
-    margin-top: 15px;
-    text-align: center;
-    font-weight: 500!important;
+.nav-item-notification ul.dropdown-menu {
+    width: 350px;
 }
 
-.offcanvas-item .logged-in-user.card {
-    border: none;
+.navbar-nav-logged-in .nav-item-user-profile .nav-link {
+    padding-right: 0!important;
 }
 
-.offcanvas-item .logged-in-user.card img {
-    width: 60px;
+.navbar-nav-logged-in .nav-item-user-profile > a {
+    padding: 0;
 }
 
-.offcanvas-item .logged-in-user.card .card-title {
-    margin-bottom: 5px;
-    font-size: 16px;
+.navbar-nav-logged-in .nav-item-user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
 }
-
-.offcanvas-item .logged-in-user.card .nav-profile {
-    font-size: 16px;
-    color: $theme-color-alt;
-}
-// Off Canvas Menu End
+// Logged In Nav End
 
 // Search Start
 .search-area {

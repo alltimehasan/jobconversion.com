@@ -33,139 +33,60 @@
 <body>
 	<!-- Header Start -->
 	<section class="header-area sticky-top bg-white">
-		<div class="container-fluid">
-			<div class="row align-items-center">
-				<div class="col-md-4">
-					<button class="btn toggle-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHeader"
-						aria-controls="offcanvasHeader">
-						<i class="bi bi-list"></i>
-					</button>
-					<img src="./assets/images/remote-jobs.jpg" alt="Remote Jobs">
-					<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasHeader" aria-labelledby="offcanvasHeaderLabel">
-						<div class="offcanvas-header">
-							<img src="./assets/images/remote-jobs.jpg" alt="Remote Jobs">
-							<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-						</div>
-						<div class="offcanvas-body">
-							<div class="offcanvas-item offcanvas-login-join">
-								<ul class="nav nav-pills flex-column">
-									<li class="nav-item">
-										<a class="nav-link nav-join" href="#">Join</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link nav-login" href="#">Log In</a>
-									</li>
-								</ul>
-							</div>
-							
-							<div class="offcanvas-item">
-								<div class="card logged-in-user mb-3">
-									<div class="row g-0 align-items-center">
-										<div class="col-2">
-											<img src="./assets/images/profile.png" class="img-fluid rounded-start" alt="...">
-										</div>
-										<div class="col-10">
-											<div class="card-body">
-												<h5 class="card-title">User Name</h5>
-												<a href="#" class="nav-profile">View Profile</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<ul class="nav flex-column">
-									<li class="nav-item">
-										<a class="nav-link" href="#">Messages</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Connections</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">My groups</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">My organizations</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Followed topics</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Settings</a>
-									</li>
-								</ul>
-							</div>
-
-							<div class="offcanvas-item">
-								<h3>Get help and advice</h3>
-								<ul class="nav flex-column">
-									<li class="nav-item">
-										<a class="nav-link" href="#">Visit the community</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Give a praise</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Search for people</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Discover resources</a>
-									</li>
-								</ul>
-							</div>
-
-							<div class="offcanvas-item">
-								<h3>Get hired</h3>
-								<ul class="nav flex-column">
-									<li class="nav-item">
-										<a class="nav-link" href="#">Find a job</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Discover hiring events</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Featured organizations</a>
-									</li>
-								</ul>
-							</div>
-
-							<div class="offcanvas-item">
-								<h3>Hire workers</h3>
-								<ul class="nav flex-column">
-									<li class="nav-item">
-										<a class="nav-link" href="#">Visit Jobcase for Employers</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<ul class="nav nav-fill">
-						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#">Community</a>
+		<nav class="navbar navbar-expand">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="./assets/images/remote-jobs.jpg" class="header-logo" alt="Remote Jobs"/>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav navbar-nav-middle m-auto">
+						<li class="nav-item d-none d-lg-block">
+							<a class="nav-link active" href="#">Find Jobs</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link active" href="#">Jobs</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Resource</a>
+						<li class="nav-item d-none d-lg-block">
+							<a class="nav-link" href="#">Post Jobs</a>
 						</li>
 					</ul>
-				</div>
-				<div class="col-md-4">
-					<ul class="nav nav-pills justify-content-end">
+					<ul class="navbar-nav navbar-nav-right">
 						<li class="nav-item">
 							<a class="nav-link active" href="#">Join</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Log In</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item d-none d-lg-block">
 							<a class="nav-link" href="#">Employers</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav align-items-center navbar-nav-logged-in">
+						<li class="nav-item">
+							<a class="nav-link active" href="#"><i class="bi bi-chat-left"></i></a>
+						</li>
+						<li class="nav-item dropdown nav-item-notification">
+							<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="bi bi-bell"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</a></li>
+								<li><a class="dropdown-item" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown nav-item-user-profile">
+							<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<img src="./assets/images/profile.png" alt="User Name"/>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#">Profile</a></li>
+								<li><a class="dropdown-item" href="#">Log out</a></li>
+							</ul>
 						</li>
 					</ul>
 				</div>
 			</div>
-		</div>
+		</nav>
 	</section>
 	<!-- Header End -->
 
@@ -176,7 +97,7 @@
 				<div class="col-12">
 					<div class="input-group">
 						<div class="input-group-text"><i class="bi bi-search"></i></div>
-						<input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Search for Jobs by Title or Keyword">
+						<input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Search for Jobs by Title or Keyword"/>
 						<div class="input-group-text"><i class="bi bi-x-lg"></i></div>
 					</div>
 				</div>
@@ -184,7 +105,7 @@
 				<div class="col-12">
 					<div class="input-group">
 						<div class="input-group-text"><i class="bi bi-geo-alt"></i></div>
-						<input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="City, State or Zip Code">
+						<input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="City, State or Zip Code"/>
 						<div class="input-group-text"><i class="bi bi-x-lg"></i></div>
 					</div>
 				</div>
@@ -201,7 +122,7 @@
 	<section class="jobs-area bg-trans">
 		<div class="container">
 			<div class="row mb-3">
-				<div class="col-10 col-md-3 offset-md-3">
+				<div class="col-10 col-lg-3 offset-lg-3">
 					<ul class="nav nav-job-search-saved">
 						<li class="nav-item">
 							<a class="nav-link active" href="#">Job Search</a>
@@ -211,13 +132,13 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-2 col-md-2 text-end">
-					<button class="btn btn-jobs-settings"><i class="bi bi-gear"></i></button>
+				<div class="col-2 col-lg-2 text-end">
+					<!-- <button class="btn btn-jobs-settings"><i class="bi bi-gear"></i></button> -->
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-lg-3 d-none d-lg-block">
 					<div class="job-filters">
 						<div class="filter-box">
 							<button class="btn btn-save-search"><i class="bi bi-suit-heart"></i> Save this search</button>
@@ -230,16 +151,34 @@
 										<button class="accordion-button" type="button" data-bs-toggle="collapse"
 											data-bs-target="#jobsFilterStayOpen-collapseOne" aria-expanded="true"
 											aria-controls="jobsFilterStayOpen-collapseOne">
-											Commute
+											Categories
 										</button>
 									</h2>
 									<div id="jobsFilterStayOpen-collapseOne" class="accordion-collapse collapse show"
 										aria-labelledby="jobsFilterStayOpen-headingOne">
 										<div class="accordion-body">
 											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="" id="remoteHome">
-												<label class="form-check-label" for="remoteHome">
-													Remote / Work from Home only
+												<input class="form-check-input" type="checkbox" name="jobCategory[]" value="Data Entry" id="jobCat1"/>
+												<label class="form-check-label" for="jobCat1">
+													Data Entry
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" name="jobCategory[]" value="Customer Services" id="jobCat2"/>
+												<label class="form-check-label" for="jobCat2">
+													Customer Services
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" name="jobCategory[]" value="Marketing" id="jobCat3"/>
+												<label class="form-check-label" for="jobCat3">
+													Marketing
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" name="jobCategory[]" value="Sales" id="jobCat4"/>
+												<label class="form-check-label" for="jobCat4">
+													Sales
 												</label>
 											</div>
 										</div>
@@ -257,37 +196,37 @@
 										aria-labelledby="jobsFilterStayOpen-headingTwo">
 										<div class="accordion-body">
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="flexRadioDefault" id="distance1">
+												<input class="form-check-input" type="radio" name="flexRadioDefault" id="distance1"/>
 												<label class="form-check-label" for="distance1">
 													5 Miles
 												</label>
 											</div>
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="flexRadioDefault" id="distance2">
+												<input class="form-check-input" type="radio" name="flexRadioDefault" id="distance2"/>
 												<label class="form-check-label" for="distance2">
 													10 Miles
 												</label>
 											</div>
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="flexRadioDefault" id="distance3">
+												<input class="form-check-input" type="radio" name="flexRadioDefault" id="distance3"/>
 												<label class="form-check-label" for="distance3">
 													15 Miles
 												</label>
 											</div>
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="flexRadioDefault" id="distance4" checked>
+												<input class="form-check-input" type="radio" name="flexRadioDefault" id="distance4"/>
 												<label class="form-check-label" for="distance4">
 													25 Miles
 												</label>
 											</div>
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="flexRadioDefault" id="distance5">
+												<input class="form-check-input" type="radio" name="flexRadioDefault" id="distance5"/>
 												<label class="form-check-label" for="distance5">
 													50 Miles
 												</label>
 											</div>
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="flexRadioDefault" id="distance6">
+												<input class="form-check-input" type="radio" name="flexRadioDefault" id="distance6"/>
 												<label class="form-check-label" for="distance6">
 													100 Miles
 												</label>
@@ -303,14 +242,28 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-lg-5">
+					<div className="jobs-sort-filter">
+						<ul class="nav justify-content-between">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Sort by recommended</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Recommended</a></li>
+									<li><a class="dropdown-item" href="#">Recommended</a></li>
+								</ul>
+							</li>
+							<li class="nav-item d-md-block d-lg-none">
+								<a class="nav-link nav-filter-btn" data-bs-toggle="modal" data-bs-target="#mobileFilterModal" href="#"><i class="bi bi-filter-left"></i> Filter</a>
+							</li>
+						</ul>                                
+					</div>
 					<div class="job-search-result">
 						<div class="card mb-3">
 							<div class="row">
-								<div class="col-md-2">
-									<a href="#"><img src="./assets/images/small_logo.png" class="img-fluid rounded" alt="..."></a>
+								<div class="col-2">
+									<a href="#"><img src="./assets/images/small_logo.png" class="img-fluid rounded" alt="..."/></a>
 								</div>
-								<div class="col-md-8 p-0">
+								<div class="col-8 p-0">
 									<a href="#" class="card-body">
 										<h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, molestiae!</h5>
 										<h6 class="card-sub-title">Apex Focus Group</h6>
@@ -319,14 +272,14 @@
 										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content... More </p>
 									</a>
 								</div>
-								<div class="col-md-2">
+								<div class="col-2">
 									<ul class="nav justify-content-end nav-save-report">
 										<li class="nav-item">
-											<a class="nav-link nav-link-save" href="#"><i class="bi bi-bookmark"></i></a>
+											<a class="nav-link nav-link-save" href="#"><i class="bi bi-save"></i></a>
 										</li>
 										<li class="nav-item dropdown">
 											<a class="nav-link" data-bs-toggle="dropdown" href="#" role="button"
-												aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></a>
+												aria-expanded="false"><i class="bi bi-gear"></i></a>
 											<ul class="dropdown-menu">
 												<li><a class="dropdown-item" href="#"><i class="bi bi-flag"></i> Report</a></li>
 											</ul>
@@ -338,10 +291,10 @@
 
 						<div class="card mb-3">
 							<div class="row">
-								<div class="col-md-2">
-									<a href="#"><img src="./assets/images/small_logo.png" class="img-fluid rounded" alt="..."></a>
+								<div class="col-2">
+									<a href="#"><img src="./assets/images/small_logo.png" class="img-fluid rounded" alt="..."/></a>
 								</div>
-								<div class="col-md-8 p-0">
+								<div class="col-8 p-0">
 									<a href="#" class="card-body">
 										<h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, molestiae!</h5>
 										<h6 class="card-sub-title">Apex Focus Group</h6>
@@ -350,14 +303,14 @@
 										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content... More </p>
 									</a>
 								</div>
-								<div class="col-md-2">
+								<div class="col-2">
 									<ul class="nav justify-content-end nav-save-report">
 										<li class="nav-item">
-											<a class="nav-link nav-link-save" href="#"><i class="bi bi-bookmark"></i></a>
+											<a class="nav-link nav-link-save" href="#"><i class="bi bi-save"></i></a>
 										</li>
 										<li class="nav-item dropdown">
 											<a class="nav-link" data-bs-toggle="dropdown" href="#" role="button"
-												aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></a>
+												aria-expanded="false"><i class="bi bi-gear"></i></a>
 											<ul class="dropdown-menu">
 												<li><a class="dropdown-item" href="#"><i class="bi bi-flag"></i> Report</a></li>
 											</ul>
@@ -369,10 +322,10 @@
 
 						<div class="card mb-3">
 							<div class="row">
-								<div class="col-md-2">
-									<a href="#"><img src="./assets/images/small_logo.png" class="img-fluid rounded" alt="..."></a>
+								<div class="col-2">
+									<a href="#"><img src="./assets/images/small_logo.png" class="img-fluid rounded" alt="..."/></a>
 								</div>
-								<div class="col-md-8 p-0">
+								<div class="col-8 p-0">
 									<a href="#" class="card-body">
 										<h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, molestiae!</h5>
 										<h6 class="card-sub-title">Apex Focus Group</h6>
@@ -381,14 +334,14 @@
 										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content... More </p>
 									</a>
 								</div>
-								<div class="col-md-2">
+								<div class="col-2">
 									<ul class="nav justify-content-end nav-save-report">
 										<li class="nav-item">
-											<a class="nav-link nav-link-save" href="#"><i class="bi bi-bookmark"></i></a>
+											<a class="nav-link nav-link-save" href="#"><i class="bi bi-save"></i></a>
 										</li>
 										<li class="nav-item dropdown">
 											<a class="nav-link" data-bs-toggle="dropdown" href="#" role="button"
-												aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></a>
+												aria-expanded="false"><i class="bi bi-gear"></i></a>
 											<ul class="dropdown-menu">
 												<li><a class="dropdown-item" href="#"><i class="bi bi-flag"></i> Report</a></li>
 											</ul>
@@ -400,10 +353,10 @@
 
 						<div class="card mb-3">
 							<div class="row">
-								<div class="col-md-2">
-									<a href="#"><img src="./assets/images/small_logo.png" class="img-fluid rounded" alt="..."></a>
+								<div class="col-2">
+									<a href="#"><img src="./assets/images/small_logo.png" class="img-fluid rounded" alt="..."/></a>
 								</div>
-								<div class="col-md-8 p-0">
+								<div class="col-8 p-0">
 									<a href="#" class="card-body">
 										<h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, molestiae!</h5>
 										<h6 class="card-sub-title">Apex Focus Group</h6>
@@ -412,14 +365,14 @@
 										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content... More </p>
 									</a>
 								</div>
-								<div class="col-md-2">
+								<div class="col-2">
 									<ul class="nav justify-content-end nav-save-report">
 										<li class="nav-item">
-											<a class="nav-link nav-link-save" href="#"><i class="bi bi-bookmark"></i></a>
+											<a class="nav-link nav-link-save" href="#"><i class="bi bi-save"></i></a>
 										</li>
 										<li class="nav-item dropdown">
 											<a class="nav-link" data-bs-toggle="dropdown" href="#" role="button"
-												aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></a>
+												aria-expanded="false"><i class="bi bi-gear"></i></a>
 											<ul class="dropdown-menu">
 												<li><a class="dropdown-item" href="#"><i class="bi bi-flag"></i> Report</a></li>
 											</ul>
@@ -430,7 +383,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-lg-4 d-none d-lg-block">
 					<div class="job-ads">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore distinctio deserunt vitae minima odit dolores!
 					</div>
@@ -444,116 +397,169 @@
 	<section class="footer-area">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
-					<img src="./assets/images/remote-jobs.jpg" alt="Remote Jobs">
-					<ul class="nav nav-social">
-						<li class="nav-item">
-							<a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#"><i class="bi bi-twitter"></i></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#"><i class="bi bi-linkedin"></i></a>
-						</li>
-					</ul>
-					<ul class="nav nav-footer flex-column">
-						<li class="nav-item">
-							<a class="nav-link" href="#">About Us</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Careers</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Jobcase Reviews</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Privacy Policy</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Terms of Use</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Services Agreement</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Job promotion guidelines</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Channel sales agreement</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">California Privacy Notice</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">California Privacy Notice</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Your Privacy Choices</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="col-lg-4">
-					<h2>For workers</h2>
-					<ul class="nav nav-footer flex-column">
-						<li class="nav-item">
-							<a class="nav-link" href="#">Community</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Job Search</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">People Search</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Topics</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Groups</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Career Advice</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Jobs Directory</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Contact Us</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="col-lg-4">
-					<h2>For employers</h2>
-					<ul class="nav nav-footer flex-column">
-						<li class="nav-item">
-							<a class="nav-link" href="#">Employer Center</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">For nonprofits</a>
-						</li>
-					</ul>
-					<h2 class="mt-4">For nonprofits</h2>
-					<ul class="nav nav-footer flex-column">
-						<li class="nav-item">
-							<a class="nav-link" href="#">Jobcase Cares</a>
-						</li>
-					</ul>
+				<div class="col-lg-12 footer-top text-center">
+					<p>* Some surveys pay up to $40. Most surveys pay between $5 - $15. There is no guarantee of specific results and results may vary.</p>
+					<h3>Remote<span>Jobs</span>Near<span>Me</span>.com</h3>
+					<p>Copyright &copy; 2021 Remote<span>Jobs</span>Near<span>Me</span>.com. All Rights Reserved.</p>
 				</div>
 			</div>
 
-			<div class="row mt-5">
-				<div class="col-lg-12">
-					<p class="copyright-text">&copy; Remotejobs, Inc. 2023 All rights reserved.</p>
+			<div class="row">
+				<div class="col-lg-12 footer-nav">
+					<ul class="nav justify-content-center">
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Privacy</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Terms</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Unsub</a>
+						</li>
+					</ul>
+					<ul class="nav justify-content-center">
+						<li class="nav-item">
+							<a class="nav-link" href="#">California Rights Policy</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">California - Do not sell my info</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- Footer End -->
+
+	<!-- Mobile Footer Nav Start -->
+	<section class="mobile-footer-nav d-lg-none d-md-block">
+		<ul class="nav fixed-bottom nav-pills nav-fill bg-white">
+			<li class="nav-item">
+				<a class="nav-link active" href="#"><i class="bi bi-search"></i><br/>Find Jobs</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#"><i class="bi bi-briefcase"></i><br/>Post Jobs</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#"><i class="bi bi-person"></i><br/>Employers</a>
+			</li>
+		</ul>
+	</section>
+	<!-- Mobile Footer Nav End -->
+
+	<!-- Mobile Popup Filter Start -->
+	<div class="modal fade" id="mobileFilterModal" tabindex="-1" aria-labelledby="mobileFilterModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="mobileFilterModalLabel">Filters</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="filter-box">
+						<div class="accordion accordion-jobs-filter" id="accordionJobFilterStayOpen">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="jobsFilterStayOpen-headingOne">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse"
+										data-bs-target="#jobsFilterStayOpen-collapseOne" aria-expanded="true"
+										aria-controls="jobsFilterStayOpen-collapseOne">
+										Categories
+									</button>
+								</h2>
+								<div id="jobsFilterStayOpen-collapseOne" class="accordion-collapse collapse show"
+									aria-labelledby="jobsFilterStayOpen-headingOne">
+									<div class="accordion-body">
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" name="jobCategory[]" value="Data Entry" id="mobileJobCat1" />
+											<label class="form-check-label" for="mobileJobCat1">
+												Data Entry
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" name="jobCategory[]" value="Customer Services" id="mobileJobCat2" />
+											<label class="form-check-label" for="mobileJobCat2">
+												Customer Services
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" name="jobCategory[]" value="Marketing" id="mobileJobCat3" />
+											<label class="form-check-label" for="mobileJobCat3">
+												Marketing
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" name="jobCategory[]" value="Sales" id="mobileJobCat4" />
+											<label class="form-check-label" for="mobileJobCat4">
+												Sales
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="jobsFilterStayOpen-headingTwo">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#jobsFilterStayOpen-collapseTwo" aria-expanded="false"
+										aria-controls="jobsFilterStayOpen-collapseTwo">
+										Distance
+									</button>
+								</h2>
+								<div id="jobsFilterStayOpen-collapseTwo" class="accordion-collapse collapse show"
+									aria-labelledby="jobsFilterStayOpen-headingTwo">
+									<div class="accordion-body">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="flexRadioDefault" id="mobileDistance1"/>
+											<label class="form-check-label" for="mobileDistance1">
+												5 Miles
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="flexRadioDefault" id="mobileDistance2"/>
+											<label class="form-check-label" for="mobileDistance2">
+												10 Miles
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="flexRadioDefault" id="mobileDistance3"/>
+											<label class="form-check-label" for="mobileDistance3">
+												15 Miles
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="flexRadioDefault" id="mobileDistance4"/>
+											<label class="form-check-label" for="mobileDistance4">
+												25 Miles
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="flexRadioDefault" id="mobileDistance5"/>
+											<label class="form-check-label" for="mobileDistance5">
+												50 Miles
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="flexRadioDefault" id="mobileDistance6"/>
+											<label class="form-check-label" for="mobileDistance6">
+												100 Miles
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn theme-btn-outline">Reset</button>
+					<button type="button" class="btn theme-btn">Apply Filters</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Mobile Popup Filter End -->
 
 	<!-- jQuery v3.6.3-->
 	<script src="assets/js/jquery-3.6.3.min.js"></script>

@@ -88,6 +88,26 @@
     border: none;
 }
 
+.jobs-sort-filter {
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.jobs-sort-filter .nav-link {
+    color: $text-color;
+}
+
+.jobs-sort-filter .nav-filter-btn {
+    border: 2px solid $theme-color-alt;
+    border-radius: 5px;
+    color: $theme-color-alt!important;
+    font-weight: 500;
+}
+
 .job-search-result .card {
     padding: 15px;
     position: relative;

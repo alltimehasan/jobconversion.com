@@ -5,33 +5,47 @@
     background-color: $theme-color;
 }
 
-.footer-area .nav-social {
-    margin-top: 20px;
-}
-
-.footer-area .nav-social .nav-link {
-    color: #fff;
-    font-size: 25px;
-}
-
-.footer-area .nav-social .nav-item:first-child .nav-link {
-    padding-left: 0;
-}
-
-.footer-area h2 {
-    color: #ddd;
-    font-size: 25px;
-}
-
-.footer-area .nav-footer .nav-link {
-    padding-left: 0;
-    color: #ddd;
-    font-weight: 300;
-    font-size: 15px;
-}
-
-.copyright-text {
+.footer-top p {
     color: #ddd;
     font-size: 14px;
 }
+
+.footer-top h3 {
+    color: #ddd;
+    font-size: 25px;
+}
+
+.footer-nav .nav-link {
+    color: #ddd;
+    font-size: 14px;
+}
+
 // Footer End
+
+// Mobile Footer Nav Start
+.mobile-footer-nav {
+    padding: 25px 0;
+}
+
+.mobile-footer-nav .nav {
+    box-shadow: rgb(0 0 0 / 12%) 0px -3px 14px 0px;
+    border-top: 1px solid $border-color;
+}
+
+.mobile-footer-nav .nav-pills .nav-link {
+    color: $text-color;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+
+.mobile-footer-nav .nav-pills .nav-link i {
+    font-size: 18px;
+}
+
+.mobile-footer-nav .nav-pills .nav-link.active {
+    background-color: transparent;
+    color: $theme-color-alt;
+}
+// Mobile Footer Nav End

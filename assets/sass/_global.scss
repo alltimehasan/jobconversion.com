@@ -37,6 +37,7 @@ button:active {
     font-weight: 500;
     border-radius: 4px;
     letter-spacing: 1px;
+	border: 1px solid $theme-color;
 }
 
 .theme-btn:hover,
@@ -44,5 +45,21 @@ button:active {
 .theme-btn:active {
 	background-color: $theme-color!important;
 	color: #fff!important;
+	border: 1px solid $theme-color!important;
+}
+
+.theme-btn-outline {
+	background-color: transparent;
+    color: $theme-color;
+    font-weight: 500;
+    border-radius: 4px;
+    letter-spacing: 1px;
+	border: 1px solid $theme-color;
+}
+
+.theme-btn-outline:hover,
+.theme-btn-outline:focus,
+.theme-btn-outline:active {
+	background-color: transparent;
 	border: 1px solid $theme-color!important;
 }
