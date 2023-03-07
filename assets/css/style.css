@@ -429,6 +429,16 @@ input[type=tel]:focus {
   margin-right: 10px;
 }
 
+.login-problem a {
+  font-size: 14px;
+  padding: 0;
+  margin: 5px;
+}
+
+.login-problem a:hover {
+  color: #FF5533;
+}
+
 .footer-area {
   background-color: #021D38;
 }

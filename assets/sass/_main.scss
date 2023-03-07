@@ -243,4 +243,14 @@
 .login-alt .theme-btn i {
     margin-right: 10px;
 }
+
+.login-problem a {
+    font-size: 14px;
+    padding: 0;
+    margin: 5px;
+}
+
+.login-problem a:hover {
+    color: $theme-color-alt;
+}
 // Login End
