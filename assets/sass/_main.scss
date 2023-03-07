@@ -201,7 +201,7 @@
 // Jobs Area End
 
 // Login Start
-.login-box {
+.login-join-box {
     max-width: 450px;
     margin: 80px auto;
     background-color: #fff;
@@ -210,14 +210,14 @@
     border-radius: 3px;
 }
 
-.login-box h2 {
+.login-join-box h2 {
     font-size: 30px;
     font-weight: normal;
     margin-bottom: 15px;
     text-align: center;
 }
 
-.login-or {
+.login-join-or {
     display: block;
     text-align: center;
     margin: 20px auto;
@@ -227,7 +227,7 @@
     line-height: 15px;
 }
 
-.login-alt .theme-btn {
+.login-join-alt .theme-btn {
     background-color: #fff!important;
     color: $text-color;
     margin-bottom: 10px;
@@ -235,22 +235,22 @@
     box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
 }
 
-.login-alt .theme-btn:hover {
+.login-join-alt .theme-btn:hover {
     background-color: $theme-color!important;
     color: #fff!important;
 }
 
-.login-alt .theme-btn i {
+.login-join-alt .theme-btn i {
     margin-right: 10px;
 }
 
-.login-problem a {
+.login-join-problem a {
     font-size: 14px;
     padding: 0;
     margin: 5px;
 }
 
-.login-problem a:hover {
+.login-join-problem a:hover {
     color: $theme-color-alt;
 }
 // Login End
