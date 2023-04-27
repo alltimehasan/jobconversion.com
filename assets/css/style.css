@@ -10,7 +10,7 @@ section {
 
 a {
   text-decoration: none;
-  color: #021D38;
+  color: #15202b;
 }
 
 button:focus,
@@ -28,37 +28,37 @@ button:active {
 }
 
 .theme-btn {
-  background-color: #021D38;
+  background-color: #15202b;
   color: #fff;
   font-weight: 500;
   border-radius: 4px;
   letter-spacing: 1px;
-  border: 1px solid #021D38;
+  border: 1px solid #15202b;
   padding: 10px;
 }
 
 .theme-btn:hover,
 .theme-btn:focus,
 .theme-btn:active {
-  background-color: #021D38 !important;
+  background-color: #15202b !important;
   color: #fff !important;
-  border: 1px solid #021D38 !important;
+  border: 1px solid #15202b !important;
 }
 
 .theme-btn-outline {
   background-color: transparent;
-  color: #021D38;
+  color: #15202b;
   font-weight: 500;
   border-radius: 4px;
   letter-spacing: 1px;
-  border: 1px solid #021D38;
+  border: 1px solid #15202b;
 }
 
 .theme-btn-outline:hover,
 .theme-btn-outline:focus,
 .theme-btn-outline:active {
   background-color: transparent;
-  border: 1px solid #021D38 !important;
+  border: 1px solid #15202b !important;
 }
 
 input[type=text],
@@ -75,17 +75,22 @@ input[type=email]:focus,
 input[type=password]:focus,
 input[type=number]:focus,
 input[type=tel]:focus {
-  border: 1px solid #FF5533;
+  border: 1px solid #3041D9;
   box-shadow: none;
 }
 
 .header-area {
   padding: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+  background-color: #15202b;
 }
 
 .header-area .navbar {
-  padding: 12px 0;
+  padding: 8px 0;
+}
+
+.header-area .navbar-brand img {
+  width: 150px;
 }
 
 .header-area .toggle-btn {
@@ -100,12 +105,12 @@ input[type=tel]:focus {
 }
 
 .header-area .toggle-btn i {
-  color: #021D38;
+  color: #15202b;
 }
 
 .header-area .navbar-nav .nav-link {
   font-weight: 500;
-  color: #3c4043;
+  color: #FFFFFF;
   font-size: 16px;
 }
 
@@ -115,11 +120,11 @@ input[type=tel]:focus {
 }
 
 .header-area .navbar-nav-middle .nav-link.active {
-  color: #FF5533;
+  color: #dfff4b;
 }
 
 .header-area .navbar-nav-right .nav-link.active {
-  background-color: #FF5533;
+  background-color: #3041D9;
   color: #fff;
   border-radius: 3px;
   padding-left: 15px;
@@ -128,7 +133,7 @@ input[type=tel]:focus {
 }
 
 .header-area .justify-content-end .nav-link.active {
-  background-color: #FF5533;
+  background-color: #3041D9;
   color: #fff;
 }
 
@@ -137,12 +142,12 @@ input[type=tel]:focus {
   padding-right: 10px !important;
 }
 
-.navbar-nav-logged-in ul.dropdown-menu {
+.navbar-nav-logged-in div.dropdown-menu {
   padding: 0;
   overflow: hidden;
 }
 
-.navbar-nav-logged-in ul.dropdown-menu .dropdown-item {
+.navbar-nav-logged-in div.dropdown-menu .dropdown-item {
   white-space: inherit;
   transition: all 0.3s;
   padding-top: 10px;
@@ -151,13 +156,17 @@ input[type=tel]:focus {
   font-size: 15px;
 }
 
-.navbar-nav-logged-in ul.dropdown-menu .dropdown-item:hover {
-  background-color: #FF5533;
+.navbar-nav-logged-in div.dropdown-menu .dropdown-item:hover {
+  background-color: #3041D9;
   color: #fff;
 }
 
-.nav-item-notification ul.dropdown-menu {
+.nav-item-notification div.dropdown-menu {
   width: 350px;
+}
+
+.navbar-nav-logged-in .dropdown-toggle::after {
+  display: none;
 }
 
 .navbar-nav-logged-in .nav-item-user-profile .nav-link {
@@ -188,6 +197,37 @@ input[type=tel]:focus {
   border: 1px solid rgba(0, 0, 0, 0.175);
 }
 
+@media (max-width: 991px) {
+  .jobs-sort-filter {
+    background-color: transparent;
+    border: none;
+  }
+  .jobs-sort-filter a.nav-link.dropdown-toggle {
+    padding-left: 0;
+  }
+  .job-search-result .card {
+    padding: 7px;
+    padding-right: 2px;
+  }
+  section {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 575px) {
+  .header-area .toggle-btn {
+    margin-right: 5px;
+  }
+  .header-area .header-logo {
+    width: 150px;
+  }
+  .header-area .justify-content-end .nav-link {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .search-area .form-control {
+    width: initial;
+  }
+}
 .nav-job-search-saved .nav-link {
   color: #202125;
   font-weight: 500;
@@ -199,7 +239,7 @@ input[type=tel]:focus {
 }
 
 .nav-job-search-saved .nav-link.active {
-  color: #FF5533;
+  color: #3041D9;
 }
 
 .btn-jobs-settings {
@@ -265,8 +305,8 @@ input[type=tel]:focus {
 }
 
 .accordion-jobs-filter .form-check-input:checked {
-  background-color: #FF5533;
-  border: #FF5533;
+  background-color: #3041D9;
+  border: #3041D9;
 }
 
 .filter-box .btn-filter-reset {
@@ -289,9 +329,9 @@ input[type=tel]:focus {
 }
 
 .jobs-sort-filter .nav-filter-btn {
-  border: 2px solid #FF5533;
+  border: 2px solid #3041D9;
   border-radius: 5px;
-  color: #FF5533 !important;
+  color: #3041D9 !important;
   font-weight: 500;
 }
 
@@ -308,7 +348,7 @@ input[type=tel]:focus {
   height: 100%;
   left: -4px;
   top: 0;
-  background-color: #FF5533;
+  background-color: #3041D9;
   transition: all 0.15s;
 }
 
@@ -326,14 +366,14 @@ input[type=tel]:focus {
 
 .job-search-result .card-body .card-title {
   font-size: 18px;
-  color: #021D38;
+  color: #15202b;
   font-weight: 500;
 }
 
 .job-search-result .card-body .card-sub-title {
   font-size: 14px;
   font-weight: 500;
-  color: #021D38;
+  color: #15202b;
 }
 
 .job-search-result .card-body .card-text {
@@ -421,7 +461,7 @@ input[type=tel]:focus {
 }
 
 .login-join-alt .theme-btn:hover {
-  background-color: #021D38 !important;
+  background-color: #15202b !important;
   color: #fff !important;
 }
 
@@ -436,11 +476,11 @@ input[type=tel]:focus {
 }
 
 .login-join-problem a:hover {
-  color: #FF5533;
+  color: #3041D9;
 }
 
 .footer-area {
-  background-color: #021D38;
+  background-color: #15202b;
 }
 
 .footer-top p {
@@ -481,7 +521,7 @@ input[type=tel]:focus {
 
 .mobile-footer-nav .nav-pills .nav-link.active {
   background-color: transparent;
-  color: #FF5533;
+  color: #3041D9;
 }
 
 @media (max-width: 991px) {

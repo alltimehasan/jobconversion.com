@@ -4,10 +4,15 @@
 .header-area {
     padding: 0;
     border-bottom: 1px solid $border-color;
+    background-color: $theme-color;
 }
 
 .header-area .navbar {
-    padding: 12px 0;
+    padding: 8px 0;
+}
+
+.header-area .navbar-brand img {
+    width: 150px;
 }
 
 .header-area .toggle-btn {
@@ -27,7 +32,7 @@
 
 .header-area .navbar-nav .nav-link {
     font-weight: 500;
-    color: $text-color;
+    color: $text-white;
     font-size: 16px;
 }
 
@@ -37,7 +42,7 @@
 }
 
 .header-area .navbar-nav-middle .nav-link.active {
-    color: $theme-color-alt;
+    color: #dfff4b;
 }
 
 .header-area .navbar-nav-right .nav-link.active {
@@ -61,12 +66,12 @@
     padding-right: 10px!important;
 }
 
-.navbar-nav-logged-in ul.dropdown-menu {
+.navbar-nav-logged-in div.dropdown-menu {
     padding: 0;
     overflow: hidden;
 }
 
-.navbar-nav-logged-in ul.dropdown-menu .dropdown-item {
+.navbar-nav-logged-in div.dropdown-menu .dropdown-item {
     white-space: inherit;
     transition: all 0.3s;
     padding-top: 10px;
@@ -75,13 +80,17 @@
     font-size: 15px;
 }
 
-.navbar-nav-logged-in ul.dropdown-menu .dropdown-item:hover {
+.navbar-nav-logged-in div.dropdown-menu .dropdown-item:hover {
     background-color: $theme-color-alt;
     color: #fff;
 }
 
-.nav-item-notification ul.dropdown-menu {
+.nav-item-notification div.dropdown-menu {
     width: 350px;
+}
+
+.navbar-nav-logged-in .dropdown-toggle::after {
+    display: none;
 }
 
 .navbar-nav-logged-in .nav-item-user-profile .nav-link {
@@ -114,3 +123,39 @@
     border: 1px solid $border-color;
 }
 // Search End
+
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {
+    .jobs-sort-filter {
+        background-color: transparent;
+        border: none;
+    }
+    .jobs-sort-filter a.nav-link.dropdown-toggle {
+        padding-left: 0;
+    }
+    .job-search-result .card {
+        padding: 7px;
+        padding-right: 2px;
+    }
+    section {
+        padding: 20px 0;
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+    .header-area .toggle-btn {
+        margin-right: 5px;
+    }
+    .header-area .header-logo {
+        width: 150px;
+    }
+    .header-area .justify-content-end .nav-link {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .search-area .form-control {
+        width: initial;
+    }
+}
